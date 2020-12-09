@@ -1,0 +1,129 @@
+$myColor: yellow;
+$fontSize: 40px;
+$myParagraph: green;
+$myList: none;
+$theBorder: 2px dashed black; 
+$theWidth: 400px;
+$theAlignment: center;
+$theBody: grey;
+$theLocation: center;
+
+body {
+    background-color: $theBody;
+}
+
+
+h1 {
+    $myColor: purple;
+    color: $myColor;
+    border: $theBorder;
+    width: $theWidth;
+    text-align: $theAlignment;
+}
+
+#alignment {
+    text-align: $theLocation;
+}
+
+li {
+    list-style: $myList;
+}
+
+// Coding to the String
+
+$backgroundColor: red;
+$fontWeight: bold;
+$myPadding: 10px;
+$marginRight: 200px;
+$marginLeft: 200px;
+
+
+#string {
+    background-color: $backgroundColor;
+    font-weight: $fontWeight;
+    padding: $myPadding;
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+}
+
+// coding to the Number
+
+$marginTop: 10px;
+
+#number {
+    margin-top: $marginTop;
+    $backgroundColor: yellow;
+    background-color: $backgroundColor;
+    $myPadding: 15px;
+    padding: $myPadding;
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+}
+
+// Coding to the color
+
+$letterSpacing: 2cm;
+
+#color {
+    margin-top: $marginTop;
+    letter-spacing: $letterSpacing;
+    background-color: $backgroundColor;
+}
+
+// Coding to the Boolean
+
+$narrowedLetters: -2px;
+$fontColor: black;
+
+#boolean {
+    margin-top: $marginTop;
+    letter-spacing: $narrowedLetters;
+    $backgroundColor: #999999;
+    background-color: $backgroundColor;
+    color: $fontColor;
+}
+
+#brackets {
+    $backgroundColor: #999999;
+    background-color: $backgroundColor; 
+}
+
+// Coding to List
+
+$textTransform: uppercase;
+
+#list {
+    margin-top: $marginTop;
+    text-transform: $textTransform;
+}
+
+// Coding to Null
+
+$lowerCase: lowercase;
+
+#nulls {
+    margin-top: $marginTop;
+    text-transform: $lowerCase;
+}
+
+// !global switch
+
+$pickedColor: rgb(32, 91, 218);
+
+$colorBehind: white;
+
+#global1 {
+    $pickedColor: rgba(218, 88, 13, 0.9) !global;
+    color: $pickedColor;
+    background-color: $colorBehind;
+}
+
+#global2 {
+    color: $pickedColor;
+    background-color: $colorBehind;
+}
+
+#global3 {
+    color: $pickedColor;
+    background-color: $colorBehind;
+}
